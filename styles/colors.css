@@ -1,0 +1,12 @@
+/* Palette de couleurs */
+
+:root {
+    --white: #eff3fa;
+    --black: #16262e;
+    --black2: #223742;
+    --text-color: #040405;
+
+    --food: #fd2047;
+    --snake: #4f7cac;
+    --head: #7691bc;
+}
