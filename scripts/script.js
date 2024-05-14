@@ -51,7 +51,11 @@ function initSnake()
     for (let i = 0; i < snakeBody.length; i++)
     {
         snake += `<div class="snake" style="grid-area: ${snakeBody[i][1]} / ${snakeBody[i][0]}"></div>`;
-        // if (i !== 0 && snakeBody)
+        
+        if (i !== 0 && snakeBody[0][1] === snakeBody[i][1] && snakeBody[0][0] === snakeBody[i][0])
+        {
+            gameOff = true;
+        }
     }
 
     return snake;
